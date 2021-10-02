@@ -1,3 +1,16 @@
+本项目来自Adminer，Adminer自4.6.3版本起不再支持无密码登录数据库，导致使用sqlite等无密码的文件数据库很是麻烦，经过仔细核对，只需要修改Adminer项目的~\adminer\include\adminer.inc.php文件中的一行代码即可正常使用。
+原来的代码
+```
+	function credentials() {
+		return array(SERVER, $_GET["username"], get_password());
+	}
+```
+改动后的代码
+```
+	function credentials() {
+		return array(SERVER, '', '');
+	}
+```
 Adminer - Database management in a single PHP file
 Adminer Editor - Data manipulation for end-users
 
