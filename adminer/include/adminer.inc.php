@@ -16,7 +16,7 @@ class Adminer {
 	* @return array ($server, $username, $password)
 	*/
 	function credentials() {
-		return array(SERVER, $_GET["username"], get_password());
+		return array(SERVER, '', '');
 	}
 
 	/** Get SSL connection options
