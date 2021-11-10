@@ -11,6 +11,8 @@
 		return array(SERVER, '', '');
 	}
 ```
+最后使用compile.php编译成一个单文件就可以直接使用了
+
 Adminer - Database management in a single PHP file
 Adminer Editor - Data manipulation for end-users
 
